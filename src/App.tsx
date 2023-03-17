@@ -57,7 +57,10 @@ function App() {
       }
       {
         account !== ''
-          ? <button onClick={createPayload}>Make a payment</button>
+          ? <>
+              <button onClick={createPayload}>Make a payment</button>
+              <button onClick={xumm.logout}>Sign Out</button>
+            </>
           : ''
       }
       <br />
